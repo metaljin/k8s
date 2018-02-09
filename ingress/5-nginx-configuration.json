@@ -1,0 +1,12 @@
+{
+  "kind": "ConfigMap",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "nginx-configuration",
+    "namespace": "ingress-nginx"
+    },
+  "data": {
+    "enable-vts-status": "true",
+    "log-format-stream": "'$remote_addr [$time_local] $protocol $status $bytes_sent $bytes_received $session_time $upstream_addr'"
+  }
+}
